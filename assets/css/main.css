@@ -2067,7 +2067,47 @@ input, select, textarea {
 		.icon.style3 {
 			color: #76ddff;
 		}
+	.image1 {
+		border-radius: 3px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
 
+		.image1 img {
+			border-radius: 3px;
+			display: block;
+		}
+
+		.image1.left {
+			float: left;
+			margin: 0 2em 2em 0;
+			top: 0.25em;
+		}
+
+		.image1.right {
+			float: right;
+			margin: 0 0 2em 2em;
+			top: 0.25em;
+		}
+
+		.image1.left, .image1.right {
+			max-width: 40%;
+		}
+
+			.image1.left img, .image1.right img {
+				width: 100%;
+			}
+
+		.image1.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image1.fit img {
+				width: 100%;
+			}
 /* Image */
 
 	.image {
@@ -2664,6 +2704,33 @@ input, select, textarea {
 				width: 100%;
 			}
 
+	.spotlight1 {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row-reverse;
+	}
+
+		.spotlight1 .image1 {
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			border-radius: 0;
+			width: 40%;
+		}
+
+			.spotlight1 .image1 img {
+				border-radius: 0;
+				width: 100%;
+			}
+
 		.spotlight .content {
 			padding: 2em 4em 0.1em 4em ;
 			-moz-order: 2;
@@ -2786,6 +2853,29 @@ input, select, textarea {
 			@media screen and (max-width: 980px) {
 
 				.wrapper > .inner {
+					width: 100%;
+				}
+
+			}
+			
+		.wrapper > .inner1 {
+			width: 60em;
+			margin: 0 auto;
+						display: flex;
+			justify-content: space-around;
+		}
+
+			@media screen and (max-width: 1280px) {
+
+				.wrapper > .inner1 {
+					width: 90%;
+				}
+
+			}
+
+			@media screen and (max-width: 980px) {
+
+				.wrapper > .inner1 {
 					width: 100%;
 				}
 
@@ -3975,4 +4065,60 @@ input, select, textarea {
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+	.devicon-ruby-plain{ 
+		font-size: 5rem;
+	}
+
+	.devicon-javascript-plain{ 
+		font-size: 5rem;
+	}
+
+	.devicon-react-original{ 
+		font-size: 5rem;
+	}
+	
+	.devicon-rails-plain{ 
+		font-size: 5rem;
+	}
+
+	.devicon-html5-plain{ 
+		font-size: 5rem;
+	}
+
+	.devicon-css3-plain{ 
+		font-size: 5rem;
+	}
+	
+	.devicon-webpack-plain{ 
+		font-size: 5rem;
+	}
+
+	.devicon-nodejs-plain{ 
+		font-size: 5rem;
+	}
+
+	.devicon-express-original{ 
+		font-size: 5rem;
+	}
+
+	.devicon-mongodb-plain{ 
+		font-size: 5rem;
+	}
+
+	.devicon-github-plain{ 
+		font-size: 5rem;
+	}
+
+	.project {
+		font-size: 1.35em;
+		line-height: 3.75em;
+		font-weight: 700;
+		letter-spacing: 0.225em;
+		border: none;
+	}
+
+	.project:hover a{
+		text-emphasis: underline;
 	}
