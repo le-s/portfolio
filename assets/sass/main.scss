@@ -1686,8 +1686,8 @@
 	body.is-preload {
 		#banner {
 			h2 {
-				@include vendor('transform', 'scale(0.95)');
-				opacity: 0;
+				// @include vendor('transform', 'scale(0.95)');
+				// opacity: 0;
 
 				&:before, &:after {
 					width: 0;
@@ -1913,4 +1913,9 @@
 				background-color: darken(_palette(bg), 8);
 			}
 		}
+	}
+
+	.about-container {
+		display: flex;
+		
 	}
