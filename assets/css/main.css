@@ -2506,9 +2506,10 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ed4933;
+			background-color: transparent;
 			box-shadow: none !important;
 			color: #ffffff !important;
+			border: 1px solid white;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2516,7 +2517,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ef5e4a !important;
+				background-color: #2e3842 !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2524,7 +2525,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #eb341c !important;
+				background-color: transparent !important;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2712,9 +2713,9 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		/* display: flex;
 		justify-content: space-around;
-		flex-direction: row-reverse;
+		flex-direction: row-reverse; */
 	}
 
 		.spotlight1 .image1 {
@@ -2723,12 +2724,13 @@ input, select, textarea {
 			-ms-order: 1;
 			order: 1;
 			border-radius: 0;
-			width: 40%;
+			width: 170%;
 		}
 
 			.spotlight1 .image1 img {
 				border-radius: 0;
 				width: 100%;
+				margin-left: 60px;
 			}
 
 		.spotlight .content {
