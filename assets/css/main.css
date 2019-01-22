@@ -1775,7 +1775,7 @@ input, select, textarea {
 	}
 
 	header.major {
-		margin: 0 0 3.5em 0;
+		margin: 0 3em 3.5em 0;
 	}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
@@ -2725,12 +2725,12 @@ input, select, textarea {
 			-ms-order: 1;
 			order: 1;
 			border-radius: 0;
-			width: 170%;
+			width: 100%;
 		}
 
 			.spotlight1 .image1 img {
 				border-radius: 0;
-				width: 75%;
+				width: 100%;
 				/* margin-left: 60px; */
 			}
 
@@ -2801,13 +2801,13 @@ input, select, textarea {
 				width: 55%;
 			}
 
-			.spotlight1 .image1 {
+			/* .spotlight1 .image1 {
 				width: 35%;
 			}
 
 			.spotlight1 .major {
 				width: 55%;
-			}
+			} */
 
 		}
 
